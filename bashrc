@@ -7,7 +7,9 @@ alias less="less -R"
 alias bc="bc -l"
 alias vi="vim"
 
-alias mouse="sudo rmmod psmouse; sudo modprobe psmouse"
+if [ "$HOSTNAME" = "arch" ]; then
+    alias mouse="sudo rmmod psmouse; sudo modprobe psmouse"
+fi
 
 alias omv="ssh -p 5000 max@wongfamily.duckdns.org"
 alias omvsftp="sftp -P 5000 max@wongfamily.duckdns.org"
