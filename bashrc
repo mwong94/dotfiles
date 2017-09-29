@@ -43,5 +43,3 @@ function prompt {
 }
 
 PROMPT_COMMAND='prompt'
-
-#xset -b
