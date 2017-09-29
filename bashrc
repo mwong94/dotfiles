@@ -44,4 +44,4 @@ function prompt {
 
 PROMPT_COMMAND='prompt'
 
-xset -b
+#xset -b
