@@ -3,7 +3,7 @@ syntax on
 filetype on
 filetype plugin on
 
-hi Normal ctermbg=Black ctermfg=Yellow
+hi Normal ctermfg=Yellow
 hi Comment ctermfg=DarkMagenta
 hi Constant ctermfg=Blue
 hi Statement ctermfg=DarkRed
