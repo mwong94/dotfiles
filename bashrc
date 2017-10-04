@@ -23,6 +23,7 @@ export EDITOR="vim"
 export HISTFILESIZE=1000
 export LANG="en_US.UTF-8"
 export JAVA_HOME="/usr/lib/jvm/default/"
+export TERM="xterm-256color"
 
 # prompting
 function prompt {
