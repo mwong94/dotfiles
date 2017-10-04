@@ -16,7 +16,6 @@ fi
 
 alias gcp="ssh -i ~/.ssh/gcp wong_max94@maxgcp.duckdns.org"
 
-alias kc="keychain --eval --quiet id_rsa"
 alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 export PATH="$PATH:.:~/.local/bin"
