@@ -5,14 +5,15 @@ alias lr="ls -ltrh"
 alias top="top -d 1"
 alias less="less -R"
 alias bc="bc -l"
-alias vi="vim"
 
 if [ "$HOSTNAME" = "arch" ]; then
     alias mouse="sudo rmmod psmouse; sudo modprobe psmouse"
+    alias darwin="ssh -p 5000 max@wongfamily.duckdns.org"
+    alias darwinsftp="sftp -P 5000 max@wongfamily.duckdns.org"
+    alias omv="ssh -p 5001 max@wongfamily.duckdns.org"
+    alias omvsftp="sftp -P 5001 max@wongfamily.duckdns.org"
 fi
 
-alias omv="ssh -p 5000 max@wongfamily.duckdns.org"
-alias omvsftp="sftp -P 5000 max@wongfamily.duckdns.org"
 alias gcp="ssh -i ~/.ssh/gcp wong_max94@maxgcp.duckdns.org"
 
 alias kc="keychain --eval --quiet id_rsa"
