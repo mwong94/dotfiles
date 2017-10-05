@@ -32,8 +32,6 @@ set noswapfile
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
-let &colorcolumn=join(range(81,999),",")
-
 map <S-j> :tabp<CR>
 map <C-j> :tabm -1<CR>
 map <S-k> :tabn<CR>
