@@ -3,6 +3,7 @@ syntax on
 filetype on
 filetype plugin on
 
+hi ColorColumn ctermbg=Black
 hi Comment ctermfg=DarkMagenta
 hi Constant ctermfg=Blue
 hi Statement ctermfg=DarkRed
@@ -28,9 +29,10 @@ set undolevels=100
 set title
 set nobackup
 set noswapfile
-set pastetoggle=<F2>
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
+
+let &colorcolumn=join(range(81,999),",")
 
 map <S-j> :tabp<CR>
 map <C-j> :tabm -1<CR>
