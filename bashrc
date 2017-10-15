@@ -5,6 +5,7 @@ alias lr="ls -ltrh"
 alias top="top -d 1"
 alias less="less -R"
 alias bc="bc -l"
+alias trash="trash-put"
 
 if [ "$HOSTNAME" = "arch" ]; then
     alias mouse="sudo rmmod psmouse; sudo modprobe psmouse"
