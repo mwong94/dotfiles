@@ -31,6 +31,9 @@ export TERM="xterm-256color"
 
 # prompting
 function prompt {
+    if [ "$(id -u)" -ne 0 ]; then
+        echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log;
+    fi
     blk=$(tput setaf 0)
     red=$(tput setaf 1)
     grn=$(tput setaf 2)
