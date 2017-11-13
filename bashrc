@@ -9,7 +9,7 @@ alias trash="trash-put"
 
 alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
 
-export PATH="$PATH:.:~/.local/bin"
+export PATH="$PATH:.:~/.local/bin:/usr/local/miniconda3/bin"
 export EDITOR="vim"
 export HISTFILESIZE=1000
 export LANG="en_US.UTF-8"
