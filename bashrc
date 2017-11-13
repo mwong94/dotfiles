@@ -10,12 +10,8 @@ alias trash="trash-put"
 if [ "$HOSTNAME" = "arch" ]; then
     alias mouse="sudo rmmod psmouse; sudo modprobe psmouse"
 
-    alias darwin="ssh -p 5000 max@wongfamily.duckdns.org"
-    alias darwinsftp="sftp -P 5000 max@wongfamily.duckdns.org"
-    alias darwinjupyter="ssh -p 5000 -L 8787:localhost:8787 max@wongfamily.duckdns.org"
-
-    alias omv="ssh -p 5001 max@wongfamily.duckdns.org"
-    alias omvsftp="sftp -P 5001 max@wongfamily.duckdns.org"
+    alias darwin="ssh max@192.168.0.5"
+    alias darwinsftp="sftp max@192.168.0.5"
 fi
 
 alias gcp="ssh -i ~/.ssh/gcp wong_max94@maxgcp.duckdns.org"
