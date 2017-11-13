@@ -7,15 +7,6 @@ alias less="less -R"
 alias bc="bc -l"
 alias trash="trash-put"
 
-if [ "$HOSTNAME" = "arch" ]; then
-    alias mouse="sudo rmmod psmouse; sudo modprobe psmouse"
-
-    alias darwin="ssh max@192.168.0.5"
-    alias darwinsftp="sftp max@192.168.0.5"
-fi
-
-alias gcp="ssh -i ~/.ssh/gcp wong_max94@maxgcp.duckdns.org"
-
 alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 export PATH="$PATH:.:~/.local/bin"
