@@ -7,8 +7,6 @@ alias less="less -R"
 alias bc="bc -l"
 alias trash="trash-put"
 
-alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
-
 export PATH="/usr/local/miniconda3/bin:$PATH:.:~/.local/bin"
 export EDITOR="vim"
 export HISTFILESIZE=1000

@@ -1,7 +1,15 @@
 syntax enable
 syntax on
-filetype on
 filetype plugin on
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'pseewald/vim-anyfold'
+call vundle#end()
+filetype plugin indent on
 
 hi ColorColumn ctermbg=Black
 hi Comment ctermfg=DarkMagenta
