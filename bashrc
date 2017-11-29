@@ -7,10 +7,6 @@ alias less="less -R"
 alias bc="bc -l"
 alias trash="trash-put"
 
-alias gcp="ssh -i ~/.ssh/gcp wong_max94@maxgcp.duckdns.org"
-
-alias wanip="dig +short myip.opendns.com @resolver1.opendns.com"
-
 export PATH="$PATH:.:~/.local/bin"
 export EDITOR="vim"
 export HISTFILESIZE=1000
