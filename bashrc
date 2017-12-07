@@ -36,5 +36,3 @@ function prompt {
 }
 
 PROMPT_COMMAND='prompt'
-
-#zzz
