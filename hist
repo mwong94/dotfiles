@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 ARG=$1
-LOG_DIR=/home/max/.logs/
+LOG_DIR=/Users/max/.logs/
 
 grep $ARG $LOG_DIR/*.log
