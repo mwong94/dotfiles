@@ -11,6 +11,11 @@ Plugin 'pseewald/vim-anyfold'
 call vundle#end()
 filetype plugin indent on
 
+let anyfold_activate=1
+let anyfold_fold_comments=1
+set foldlevel=0
+hi Folded term=NONE cterm=NONE
+
 hi ColorColumn ctermbg=Black
 hi Comment ctermfg=DarkMagenta
 hi Constant ctermfg=Blue
