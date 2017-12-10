@@ -1,7 +1,21 @@
 syntax enable
 syntax on
-filetype on
-filetype plugin on
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tmhedberg/SimpylFold'
+call vundle#end()
+filetype plugin indent on
+
+" anyfold settings
+let anyfold_activate=1
+let anyfold_fold_comments=1
+set foldlevel=0
+hi Folded term=None cterm=None
+" anyfold settings
 
 hi ColorColumn ctermbg=Black
 hi Comment ctermfg=DarkMagenta
@@ -41,11 +55,8 @@ noremap k gj
 noremap l gk
 noremap j h
 
-func! WordMode()
-    setlocal textwidth=100
-    setlocal smartindent
-    setlocal spell spelllang=en_US
-    setlocal noexpandtab
-endfu
-
-com! WORD call WordMode()
+augroup AutoSaveFolds
+    autocmd!
+    autocmd BufWinLeave *.* mkview
+    autocmd BufWinEnter *.* silent loadview
+augroup END
