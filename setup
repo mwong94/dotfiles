@@ -1,0 +1,12 @@
+mv ~/.bashrc ~/.bashrc.bak
+
+mkdir ~/.logs
+mkdir -p ~/.local/bin
+mkdir -p ~/.vim/bundle
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+ln -s $PWD/bashrc ~/.bashrc
+ln -s $PWD/vimrc ~/.vimrc
+ln -s $PWD/tmux.conf ~/.tmux.conf
+ln -s $PWD/hist ~/.local/bin/hist
