@@ -7,7 +7,7 @@ alias less="less -R"
 alias bc="bc -l"
 alias trash="trash-put"
 
-export PATH="$PATH:.:~/.local/bin"
+export PATH="/home/max/miniconda3/bin:$PATH:.:~/.local/bin"
 export EDITOR="vim"
 export HISTFILESIZE=1000
 export LANG="en_US.UTF-8"
