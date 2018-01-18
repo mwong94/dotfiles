@@ -36,3 +36,5 @@ function prompt {
 }
 
 PROMPT_COMMAND='prompt'
+
+umask 077
