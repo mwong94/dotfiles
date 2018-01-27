@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+WD=~/Documents/uci
+
+cd $WD
+
+tmux -2 new-session -d -s jup
+tmux rename-window -t jup:0 jupyter
+tmux send-keys 'jupyter notebook' C-m
+
+tmux -2 new-session -d -s 170a
+tmux new-window -t 170a:1 -n 'psql'
+tmux send-keys 'psql -d imdb' C-m
+tmux select-window -t 170a:0
